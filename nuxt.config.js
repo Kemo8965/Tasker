@@ -36,6 +36,7 @@ export default {
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
+        '@nuxtjs/auth-next'
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -50,4 +51,10 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
+
+    // Global Configuration for Middleware
+    router: {
+        middleware: ['auth']
+    }
+
 }
